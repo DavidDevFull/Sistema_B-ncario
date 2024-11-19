@@ -14,16 +14,23 @@ from InquirerPy import prompt
 def create_account():# Função para que seja crido uma conta.
     print("Função para criar conta chamada.")
     collecting_data_costumer()# Sendo chamada.
+#Tesk of 
+#[]Criar uma constante que recebe os dados de cada usuário(tupla).
+#[]Criar um validador número ou string.
+#[]Criar um Password.
+#[]Valor inicial da conta para cada usuário.
+#[]Largura de numeros que CPF/CNPJ pode receber/CPF: 11 Números - CNPJ: 14 Números .
+
 
 def collecting_data_costumer():# Função para que seja crido uma conta.
     customer_data = {}  # Dicionário para armazenar os dados do cliente
 
     questions_manual = [ # Perguntas de entrada manual
-        {"name": "nome", "message": "Digite seu nome: "}, # Nome , Chave, Menssagem referente a pergunta.
+        {"name": "nome",            "message": "Digite seu nome: "}, # Nome , Chave, Menssagem referente a pergunta.
         {"name": "data_nascimento", "message": "Digite sua data de nascimento: "}, # Nome , Chave, Menssagem referente a pergunta.
-        {"name": "cpf_cnpj", "message": "Digite seu CPF ou CNPJ: "}, # Nome , Chave, Menssagem referente a pergunta.
-        {"name": "logradouro", "message": "Digite seu logradouro: "}, # Nome , Chave, Menssagem referente a pergunta.
-        {"name": "bairro", "message": "Digite seu bairro: "}, # Nome , Chave, Menssagem referente a pergunta.
+        {"name": "cpf_cnpj",        "message": "Digite seu CPF ou CNPJ: "}, # Nome , Chave, Menssagem referente a pergunta.
+        {"name": "logradouro",      "message": "Digite seu logradouro: "}, # Nome , Chave, Menssagem referente a pergunta.
+        {"name": "bairro",          "message": "Digite seu bairro: "}, # Nome , Chave, Menssagem referente a pergunta.
     ]
     
     for question in questions_manual: # Laço que percorre o questions_manual e sua posição atual.
